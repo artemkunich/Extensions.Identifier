@@ -2,7 +2,7 @@ using System;
 
 namespace Akunich.Extensions.Identifier;
 
-internal class GuidIdentifierProvider : IIdentifierProvider<Guid>
+internal sealed class GuidIdentifierProvider : IIdentifierProvider<Guid>
 {
     public Guid CreateNewId() => Guid.NewGuid();
 }
